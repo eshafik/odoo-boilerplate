@@ -1,0 +1,10 @@
+#!/bin/sh
+
+ROOT="$(cd "$(dirname "$0")"/.. && pwd)"
+PYTHON="$ROOT/venv/bin/python3"
+ODOO="$ROOT/src/odoo/odoo-bin"
+
+ROOT_DIR_NAME="$(basename "$ROOT")"
+$PYTHON $ODOO -i base -c "$ROOT/$ROOT_DIR_NAME.cfg" "$@"
+exit $?
+

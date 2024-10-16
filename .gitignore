@@ -1,0 +1,13 @@
+# dotfiles, with exceptions:
+.*
+!.gitignore
+# python compiled files
+*.py[co]
+# emacs backup files
+*~
+# not tracked subdirectories
+/venv/
+/src/
+/filestore/
+/logs/
+*.cfg
