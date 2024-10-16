@@ -7,7 +7,7 @@
 *~
 # not tracked subdirectories
 /venv/
-/src/
+/src/odoo/
 /filestore/
 /logs/
 *.cfg
